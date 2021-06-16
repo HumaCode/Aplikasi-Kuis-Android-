@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pilgan"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:background="@color/pink">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/shape"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Skor :"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:text=" 0"
+                android:textSize="20sp"
+                android:id="@+id/skor"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:text="Kuis Sederhana"
+        android:id="@+id/kuis"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/board"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:id="@+id/pilihan"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilihan A"
+            android:textSize="20sp"
+            android:id="@+id/pilihanA"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilihan B"
+            android:textSize="20sp"
+            android:id="@+id/pilihanB"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilihan C"
+            android:textSize="20sp"
+            android:id="@+id/pilihanC"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilihan D"
+            android:textSize="20sp"
+            android:id="@+id/pilihanD"/>
+
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="next"
+            android:text="Next"
+            android:background="@drawable/shape_button"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            tools:ignore="OnClick" />
+
+    </RelativeLayout>
+
+</LinearLayout>

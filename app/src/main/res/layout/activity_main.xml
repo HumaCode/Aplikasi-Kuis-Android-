@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/pink">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/judul"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="15dp" />
+
+    <ImageView
+        android:id="@+id/bendera"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/bendera_indonesia"/>
+
+    <LinearLayout
+        android:id="@+id/pilgan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/bendera"
+        android:layout_margin="20dp"
+        android:background="@drawable/shape2"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/gbr_pilihanganda"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Kuis Pilihan Ganda"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="5dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/essay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/bendera"
+        android:layout_margin="20dp"
+        android:background="@drawable/shape"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/gbr_essay"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Kuis Essay"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="5dp"/>
+    </LinearLayout>
+
+</RelativeLayout>
